@@ -25,7 +25,7 @@ int main() {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 	// this function call will set a breakpoint at the location of a leaked block
 	// set the parameter to the identifier for a leaked block
-	_CrtSetBreakAlloc(-1);
+	_CrtSetBreakAlloc(1);
 
 	// Creating a couple of movies
 	Movie film1("Lord of the Rings: The Fellowship of the Ring", 208);
@@ -63,3 +63,6 @@ int main() {
 	return 0;
 }
 
+void DisplayMovie(const Movie _movie)
+{
+}

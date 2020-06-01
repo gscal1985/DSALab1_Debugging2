@@ -48,7 +48,8 @@ Movie::Movie(const Movie& _copy) {
 // Return: The invoking object (by reference)
 Movie& Movie::operator=(const Movie& _assign) {
 	// Self-assignment check
-	if (this == _assign)
+	//changed operator
+	if (this != &_assign)
 		return *this;
 	
 
